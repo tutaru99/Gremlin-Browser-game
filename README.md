@@ -1,3 +1,3 @@
 # Gremlin-Browser-game-VueJS
 
-Defeat gremblin OVERLORD by clicking a single button
+Defeat gremlin OVERLORD by clicking a single button
