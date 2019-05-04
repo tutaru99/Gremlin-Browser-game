@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <hr>
+    
+        <!-- Player Image -->
+        <div id="player" v-bind:class="{dead: ended}"></div>
+ 
+        <!--    Player DMG -->
+        <div id="player-damage"> Health: {{ health }} <br>
+        Damage: <div id=dmg></div> Kapow!</div>
+            
+    
+
+        <!--    PLayer HealthBar -->
+        <div id="player-health">
+            <div id="healthbar-color" v-bind:style= "{ width: health + '%' }">
+
+            </div>
+        </div>
+       
+        <!--    Controls    -->
+        <div id="controls">
+            <button v-on:click="damage" v-show="!ended">Damage</button>
+            <button v-on:click="restart">Restart</button>
+        </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#vue-app {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+
+#player {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: url('assets/fullhp.png') center no-repeat;
+    background-size: 90%;
+}
+
+#player.dead {
+    background: url('assets/dead.gif') center no-repeat;
+    background-size: 90%;
+}
+
+#player-damage {
+    margin: 0 auto 20px auto;
+    width: 200px;
+    color: rgb(12, 190, 36);
+  
+}
+
+#player-health {
+    margin: 0 auto 20px auto;
+    width: 200px;
+    border: 1px solid #444444;
+}
+#player-health div{
+    height: 20px;
+    background-color: green;
+
+}
+#dmg {
+    display: inline;
+}
